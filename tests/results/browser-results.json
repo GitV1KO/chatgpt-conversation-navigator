@@ -1,0 +1,192 @@
+{
+  "started": "2026-10-28T08:10:41.790Z",
+  "finished": "2026-10-28T08:11:07.544Z",
+  "browserVersion": "152.0.7977.76",
+  "playwrightVersion": "1.64.1",
+  "playwrightModule": "playwright",
+  "mode": "Actual unpacked Manifest V3 extension in an isolated browser profile, routed synthetic https://chatgpt.com and legacy-domain documents; no real ChatGPT connection or account access.",
+  "passed": 28,
+  "failed": 0,
+  "results": [
+    {
+      "name": "actual-manifest-injection-and-user-only-index",
+      "passed": true,
+      "durationMs": 299,
+      "details": {
+        "injection": "Manifest V3 content_scripts; no addScriptTag or extension-script evaluation",
+        "messages": 80
+      }
+    },
+    {
+      "name": "rich-message-extraction-image-and-safe-literal-text",
+      "passed": true,
+      "durationMs": 189
+    },
+    {
+      "name": "duplicate-text-distinct-targets-and-clone-deduplication",
+      "passed": true,
+      "durationMs": 655
+    },
+    {
+      "name": "css-hidden-duplicate-rebinds-to-rendered-stable-target",
+      "passed": true,
+      "durationMs": 667
+    },
+    {
+      "name": "search-chinese-case-insensitive-and-highlight",
+      "passed": true,
+      "durationMs": 207
+    },
+    {
+      "name": "scroll-to-target-selection-and-transient-highlight",
+      "passed": true,
+      "durationMs": 2337
+    },
+    {
+      "name": "smooth-scroll-animation-with-normal-motion-preference",
+      "passed": true,
+      "durationMs": 1788,
+      "details": {
+        "distinctScrollPositions": 15
+      }
+    },
+    {
+      "name": "new-message-and-late-role-attribute-update",
+      "passed": true,
+      "durationMs": 499
+    },
+    {
+      "name": "assistant-streaming-preserves-list-nodes-and-search",
+      "passed": true,
+      "durationMs": 1447,
+      "details": {
+        "assistantMutations": 100,
+        "navigationListMutations": 0
+      }
+    },
+    {
+      "name": "spa-delayed-route-replacement-excludes-previous-chat",
+      "passed": true,
+      "durationMs": 2328
+    },
+    {
+      "name": "spa-synchronous-route-and-dom-replacement",
+      "passed": true,
+      "durationMs": 318
+    },
+    {
+      "name": "route-trailing-slash-preserves-message-identities",
+      "passed": true,
+      "durationMs": 1236
+    },
+    {
+      "name": "new-chat-and-custom-gpt-url-promotion-preserves-messages",
+      "passed": true,
+      "durationMs": 2502
+    },
+    {
+      "name": "equal-unkeyed-messages-never-guess-replacement-identity",
+      "passed": true,
+      "durationMs": 507
+    },
+    {
+      "name": "recycled-virtual-node-cannot-redirect-old-entry",
+      "passed": true,
+      "durationMs": 324
+    },
+    {
+      "name": "prepend-history-order-and-remounted-target",
+      "passed": true,
+      "durationMs": 897
+    },
+    {
+      "name": "disjoint-virtual-windows-merge-by-reliable-turn-ordinals",
+      "passed": true,
+      "durationMs": 484
+    },
+    {
+      "name": "missing-virtualized-target-honest-status-no-false-success",
+      "passed": true,
+      "durationMs": 1171
+    },
+    {
+      "name": "explicit-history-loading-indexes-arriving-older-messages",
+      "passed": true,
+      "durationMs": 762,
+      "details": {
+        "loadedEarlierMessages": 3,
+        "activation": "User explicitly clicked history loading control"
+      }
+    },
+    {
+      "name": "history-load-cancellation-restores-scroll-position",
+      "passed": true,
+      "durationMs": 650
+    },
+    {
+      "name": "escape-stops-explicit-history-loading",
+      "passed": true,
+      "durationMs": 240
+    },
+    {
+      "name": "semantic-fallback-and-unknown-markup-status",
+      "passed": true,
+      "durationMs": 417
+    },
+    {
+      "name": "collapse-expand-maintains-navigation-state",
+      "passed": true,
+      "durationMs": 264
+    },
+    {
+      "name": "narrow-window-jump-collapses-panel-for-reading",
+      "passed": true,
+      "durationMs": 496
+    },
+    {
+      "name": "responsive-light-dark-and-input-clearance",
+      "passed": true,
+      "durationMs": 1518,
+      "details": {
+        "screenshots": 6,
+        "viewportSizes": [
+          "1440x1000",
+          "390x844",
+          "720x540"
+        ]
+      }
+    },
+    {
+      "name": "long-conversation-200-users-no-initial-auto-scroll",
+      "passed": true,
+      "durationMs": 1433,
+      "details": {
+        "assistantMutations": 1000,
+        "frameCompletionMs": 14
+      }
+    },
+    {
+      "name": "legacy-chat-openai-match-and-refresh",
+      "passed": true,
+      "durationMs": 255
+    },
+    {
+      "name": "no-network-requests-or-persisted-conversation-content",
+      "passed": true,
+      "durationMs": 18,
+      "details": {
+        "blockedOrUnexpectedPageRequests": 0,
+        "browserStorage": {
+          "local": 0,
+          "session": 0,
+          "databases": 0
+        }
+      }
+    }
+  ],
+  "remainingManualChecks": [
+    "Real signed-in ChatGPT DOM, branch/edit controls and website-specific virtualized history loading.",
+    "Unpacked extension manual installation and UI behavior on current Chrome.",
+    "Browser zoom, operating-system screen readers, touch/keyboard interaction and real-world long-session memory use."
+  ]
+}

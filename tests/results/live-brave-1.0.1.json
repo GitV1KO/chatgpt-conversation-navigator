@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "extensionVersion": "1.0.1",
+  "browserAppVersion": "152.1.94.119",
+  "method": "Manual native UI / accessibility / visual inspection in the user's existing signed-in Brave; real ChatGPT documents, no synthetic fixtures.",
+  "simulatedTestsRunThisRevision": false,
+  "messagesSent": 0,
+  "messageChanges": 0,
+  "checks": [
+    {
+      "name": "Existing Brave extension reload",
+      "result": "pass",
+      "observed": "Installed source folder matched project extension; version 1.0.1 shown in extension details."
+    },
+    {
+      "name": "Current ChatGPT user DOM recognition",
+      "result": "pass",
+      "observed": "Conversation A indexed 5 user prompts after reload instead of zero."
+    },
+    {
+      "name": "Chinese search and exact jump",
+      "result": "pass",
+      "observed": "A Chinese keyword query matched one user prompt; actual target bubble visually confirmed after jump."
+    },
+    {
+      "name": "Second real conversation and attachments",
+      "result": "pass",
+      "observed": "Conversation B indexed 5 current prompts, including image placeholders."
+    },
+    {
+      "name": "Case-insensitive English search",
+      "result": "pass",
+      "observed": "An uppercase keyword matched lowercase text, one result; image-containing target and temporary highlight visually confirmed."
+    },
+    {
+      "name": "SPA active-conversation selection",
+      "result": "pass",
+      "observed": "Sidebar navigation between the two real conversations cleared search and replaced directory after new content loaded; hidden previous page excluded."
+    },
+    {
+      "name": "Explicit history scanning",
+      "result": "pass",
+      "observed": "A completed scan increased indexed prompts from 5 to 25, adding 20; budget completion reported honestly."
+    },
+    {
+      "name": "Escape stops loading",
+      "result": "pass",
+      "observed": "Escape during load closed panel; reopening showed stopped/restoration result."
+    },
+    {
+      "name": "Virtualized cached target recovery",
+      "result": "pass",
+      "observed": "An entry marked original text absent from page was recovered; matching original user bubble visually confirmed."
+    },
+    {
+      "name": "Reading position restoration",
+      "result": "pass",
+      "observed": "After completed history scan, the original recent target question was again visible at the saved reading position."
+    },
+    {
+      "name": "Refresh initialization",
+      "result": "pass",
+      "observed": "Multiple real page refreshes recreated a single navigator and rebuilt current loaded-message index."
+    },
+    {
+      "name": "Final long-turn optimization and second browser tab",
+      "result": "pass",
+      "observed": "After final source reload, one scan grew index from 5 to 45 (40 new), reported current page top, and returned to original prompt. Other existing real tab refreshed and indexed 5 prompts; returning preserved the 45-entry index."
+    },
+    {
+      "name": "New message submission / Chrome / light theme / long-run memory",
+      "result": "not_tested",
+      "observed": "No messages sent for testing. These cases were not part of this real-session verification."
+    }
+  ],
+  "sourceSha256": {
+    "icons/icon128.png": "3101339e09e0e5003426729fc801d4b9643a3d5b82dded56ffba73b22eaf7fa1",
+    "icons/icon16.png": "71a56433fafbc2040fb2f6c794f0b8f93a932e2ece5d50e932f8681758738b98",
+    "icons/icon48.png": "4bf37c26e38f3a2476d0cc2bd3cc833ff4c4c51adb3b0de3cc0c22961b183cea",
+    "manifest.json": "e0a5d4cba6da8cafbde8dbcb7df5aabae758112dedcb8e89c0293becfb68b25c",
+    "src/content.js": "cbee9978cf5558ca55c2f69fd17dc0e4239b727c3fc92d8a19c81610003b343f",
+    "src/dom.js": "0a605d72d148a8889a0befe1cef253bcc3423871dc12428eb9365a3822bd9d5d",
+    "src/index.js": "8dc3c64abcdaf78eefaa957ff856f7dffa0571bd72ec1b5ddd2b1b3959650f1b",
+    "src/navigation.js": "9cd3b46f88d2b6a3d34eaeb8842c2c9f7baf5517caa3a97b3e8c35d6ca4efd7f",
+    "src/panel.js": "c8cbb666b873157fdf4c1864482a2cf88c30e2d4b3bc45d63db0bbfabac4070f"
+  },
+  "finalHistoryScan": {
+    "initialIndexed": 5,
+    "finalIndexed": 45,
+    "newPrompts": 40,
+    "reachedCurrentPageTop": true,
+    "serverCompleteHistoryConfirmed": false,
+    "readingPositionVisuallyConfirmed": true
+  },
+  "publicationNote": "Conversation names and actual query contents were anonymized for public publication."
+}

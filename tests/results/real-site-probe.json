@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-28T08:04:30.302Z",
+  "scope": "Anonymous read-only real ChatGPT landing page in isolated temporary profile. No login, no account access, no message sent, no existing browser profile.",
+  "signedInConversationTested": false,
+  "browserVersion": "152.0.7977.76",
+  "httpStatus": 403,
+  "accessBlocked": true,
+  "url": "https://chatgpt.com/",
+  "title": "请稍候…",
+  "extensionHostPresent": true,
+  "composerPresent": false,
+  "mainRegionPresent": true,
+  "accessChallengePresent": true,
+  "signInControlPresent": false,
+  "navigatorStatus": "尚未识别到用户提问。可能是新会话、内容未加载或页面结构变化；无法确认时请重新扫描。",
+  "indexedMessages": "已索引 0 条提问",
+  "outcome": "HTTP error or access/loading challenge; real conversation application DOM not verified."
+}
